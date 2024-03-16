@@ -1,0 +1,124 @@
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+header nav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+header .first {
+  padding: 20px 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ADC9A6;
+  gap: 10px;
+}
+header .first p {
+  font-size: 16px;
+}
+header .second {
+  padding: 30px 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #153C3C;
+}
+header .second i {
+  display: none;
+  font-size: 25px;
+  color: #fff;
+}
+header .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+header .link a {
+  opacity: 0.8;
+}
+header .link a:hover {
+  color: #cec216;
+}
+header .logo {
+  display: flex;
+  gap: 10px;
+  color: #fff;
+}
+header .logo h2 {
+  font-size: 23px;
+}
+header .links {
+  display: flex;
+  gap: 30px;
+}
+header .bars {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+header .main {
+  width: 100%;
+  padding: 20px 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+header .main img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+header .main h1 {
+  max-width: 500px;
+  font-size: 60px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+header .main h3 {
+  padding: 10px 20px;
+  background-color: #F3F7F2;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+@media (max-width: 850px) {
+  .container header nav .second .bars i {
+    display: block;
+  }
+  .container header nav .second .links {
+    display: none;
+  }
+}
+@media (max-width: 550px) {
+  .container header nav .first {
+    padding: 10px 50px;
+  }
+  .container header nav .first p {
+    font-size: 15px;
+  }
+  .container header nav .second {
+    padding: 20px 50px;
+  }
+  .container header nav .second .bars button {
+    display: none;
+  }
+  .container header .main {
+    padding: 20px 50px;
+  }
+  .container header .main h1 {
+    font-size: 35px;
+  }
+  .container header .main h3 {
+    font-size: 15px;
+  }
+}/*# sourceMappingURL=header.css.map */

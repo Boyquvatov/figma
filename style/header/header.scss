@@ -1,0 +1,140 @@
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    nav{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .first{
+        padding: 20px 100px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ADC9A6;
+        gap: 10px;
+        p{
+            font-size: 16px;
+        }
+    }
+    .second{
+        padding: 30px 100px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #153C3C;
+        i{
+            display: none;
+            font-size: 25px;
+            color: #fff;
+        }
+    }
+    .link{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+        a{
+            opacity: 0.8;
+        }
+        a:hover{
+            color: #cec216;
+        }
+    }
+    .logo{
+        display: flex;
+        gap: 10px;
+        color: #fff;
+        h2{
+            font-size: 23px;
+        }
+    }
+    .links{
+        display: flex;
+        gap: 30px;
+    }
+    .bars{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+    .main{
+        width: 100%;
+        padding: 20px 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+        margin-top: 20px;
+        img{
+            width: 100%;
+            object-fit: cover;
+        }
+        h1{
+            max-width: 500px;
+            font-size: 60px;
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
+        h3{
+            padding: 10px 20px;
+            background-color: #F3F7F2;
+            font-size: 18px;
+            font-weight: 500;
+        }
+    }
+}
+@media(max-width:850px){
+    .container{
+        header{
+            nav{
+                .second{
+                    .bars{
+                        i{
+                            display: block;
+                        }
+                    }
+                    .links{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:550px){
+    .container{
+        header{
+            nav{
+                .first{
+                    padding: 10px 50px;
+                    p{
+                        font-size: 15px;
+                    }
+                }
+                .second{
+                    padding: 20px 50px;
+                    .bars{
+                        button{
+                            display: none;
+                        }
+                    }
+                }
+            }
+            .main{
+                padding: 20px 50px;
+                h1{
+                    font-size: 35px;
+                }
+                h3{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
